@@ -1,0 +1,6 @@
+- @title = @post.title
+#show
+  = partial 'posts/post', obejct: @post
+
+p
+  = link_to 'View all posts', url_for(:posts, :index)
