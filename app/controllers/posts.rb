@@ -6,7 +6,7 @@ PadrinoSample::App.controllers :posts do
   end
 
   get :show do
-    @post = Post.find_by(id: params[:id])
+    @post = Post.find(params[:id])
     render 'posts/show'
   end
 
